@@ -12,7 +12,8 @@ module.exports = {
     },
   },
   plugins: [
-    {
+    "gatsby-plugin-typescript"
+    ,{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -76,6 +77,16 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    // `gatsby-plugin-graphql-codegen`,
+    // {
+    //   options: {
+    //     fileName: `types/graphql-types.d.ts`,
+    //     codegen: true,
+    //     documentPaths: ["’./src/**/*.{ts,tsx}‘",
+    //       "’./.cache/fragments/*.js’", 
+    //       "’./node_modules/gatsby-*/**/*.js’"]
+    //   }
+    // }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
