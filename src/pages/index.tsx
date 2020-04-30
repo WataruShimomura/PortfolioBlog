@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      //@ts-ignore
+      // @ts-ignore
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (

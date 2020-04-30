@@ -78,14 +78,14 @@ const SEO : React.FC<SEOProps> = (props :SEOProps) => {
           content: metaDescription,
         },
       ]
-      .concat(props.meta)
+      .concat(props.meta as Meta[])
     }
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `jp`,
   meta: [],
   description: ``,
 }
